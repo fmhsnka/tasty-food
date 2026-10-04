@@ -64,9 +64,9 @@
 
 	<section class="footer">
 		<div class="social-media">
-			<a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-			<a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-			<a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+			<a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
 			<a href="https://www.google.com/gmail/about/"><i class="fa-brands fa-google"></i></a>
 		</div>
 
