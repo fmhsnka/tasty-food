@@ -1,0 +1,1219 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	text-decoration: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/* NAVBAR */
+.header{
+	background-color: rgb(171 171 171);
+	box-shadow: calc(100vw * 0/1900) calc(100vw * 2/1900) calc(100vw * 10/1900) rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0px;
+	width: calc(100vw * 1900/1900);
+	z-index: 99999;
+	padding: calc(100vw * 0/1900);
+	margin: calc(100vw * 0/1900);
+}
+
+h5 {
+	padding: calc(100vw * 0/1900);
+	margin: calc(100vw * 0/1900);
+	font-family: 'Poppins';
+	font-weight: bold;
+	font-size: calc(100vw * 20/1900);
+}
+.header nav{
+	position: relative;
+	display: flex;
+	max-width: calc(100% - 200px);
+	margin: calc(100vw * 0/1900) auto;
+	height: calc (100vw * 70/1900);
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav .content{
+	display: flex;
+	align-items: center;
+}
+
+nav .content .links{
+	margin-left: 100px;
+	display: flex;
+}
+
+.links {
+	position: relative;
+	padding: calc(100vw * 0/1900);
+	margin: calc(100vw * 0/1900);
+	left: calc(100vw * 748/1900);
+}
+
+.content .logo a{
+	color: #fff;
+	font-size: calc(100vw * 50/1900);
+	font-weight: 600;
+}
+
+.content .links .log-out a {
+	background-color: #323c4e;
+}
+
+.content .links li{
+	position: relative;
+	list-style: none;
+	line-height: 70px;
+}
+
+.content .links li a, .content .links li label{
+	color: #fff;
+	font-size: 19px;
+	font-weight: 500;
+	padding: 9px 17px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.content .links li label{
+	display: none;
+}
+
+.content .links li a:hover, .content .links li label:hover{
+	background: #323c4e;
+}
+
+.header .menu-icon{
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+	line-height: 70px;
+	width: 70px;
+	text-align: center;
+}
+
+.header .menu-icon{
+	display: none;
+}
+
+.header input[type="checkbox"]{
+	display: none;
+}
+
+.content .links ul{
+	position: absolute;
+	background: #171c24;
+	top: 80px;
+	z-index: -1;
+	opacity: 0;
+	visibility: hidden;
+	width: 185%;
+}
+
+.content .links li:hover > ul{
+	top: 70px;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease;
+}
+
+/* Burger's Content */
+#container {
+	display: flex;
+	width: 90%;
+	margin: 35px auto;
+	margin-top: 100px;
+	margin-bottom: 5px;
+	padding: 25px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	border-radius: 8px;
+	background-color: rgb(245, 235, 220);
+	flex-wrap: wrap;
+}
+
+.mini {
+	width: 100%;
+	background-color: rgb(245, 235, 220);
+}
+
+.img {
+	margin-top: 65px;
+	margin-bottom: 50px;
+	height: 550px;
+    width: 650px;
+	border-radius: 10px;
+	display: inline-block;
+	cursor: pointer;
+	transition: transform 0.5s ease-out;
+}
+
+.left-picture, .right-side {
+	width: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-picture {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reminder {
+	width: 100%;
+}
+
+#info {
+	font-size: 24px;
+	text-align: none;
+	font-family: "Poppins", sans-serif;
+}
+
+h1 {
+	font-size: 103px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Style Script', cursive;	
+	padding-bottom: 2px; 
+	transition: transform 0.4s ease-out;
+	color: rgb(80, 35, 20);
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+	font-family: 'Style Script', cursive;
+    font-weight: bold;
+	font-size: 70px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.ingre {
+	width: 50%;
+}
+
+.ingre-info {
+	margin: 0;
+    padding-left: 0;
+    font-size: 25px;
+}
+
+.ingre-info .ingredients-item {
+	padding-right: 36px;
+    list-style: none;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.steps {
+	width: 50%;
+	background-color: rgb(245, 235, 220);
+}
+
+.instruction {
+	font-family: 'Style Script', cursive;
+	font-weight: bold;
+	font-size: 70px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.procedure-item {
+	border-bottom: 2px solid #bac4d0;
+    padding-bottom: 20px;
+	margin-top: 0;
+    margin-bottom: 20px;
+	font-size: 25px;
+	list-style: none;
+}
+
+.p2, .p3 {
+	padding-bottom: 15px;
+	font-family: 'Style Script', cursive;
+	font-weight: bold;
+	font-size: 60px;
+	transition: transform 0.4s ease-out;
+	text-align: center;
+}
+
+.p2 {
+	padding-top: 20px;
+}
+
+.ListItem, .ListItem123 {
+	padding-bottom: 15px;
+	font-size: 23px;
+	text-align: center;
+	list-style-type: none;
+}
+
+/* Footer */
+.footer {
+	padding-top: 40px;
+	padding-bottom: 10px;
+	background: linear-gradient(to right, #232526, #414345);
+	width: 100%;
+}
+
+.footer .social-media {
+	text-align: center;
+	padding-bottom: 25px;
+	color: #fff;
+}
+
+.footer .social-media a {
+	font-size: 24px;
+	color: inherit;
+	border: 1px solid #ccc;
+	width: 40px;
+/*	height: 40px;*/
+	line-height: 38px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 8px;
+	opacity: 0.75;
+}
+
+.footer .social-media a:hover {
+	opacity: 0.9;
+	color: #928dab;
+}
+
+/* Shortcut access */
+.footer .social-media a i {
+	margin-top: 18%;
+}
+
+.footer ul {
+	margin-top: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 0;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.footer ul li a {
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.footer ul li a:hover {
+	opacity: 1;
+}
+
+.footer ul li {
+	display: inline-block;
+	padding: 0 15px;
+}
+
+/* Copy Right */
+.footer .Copyright {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 13px;
+	color: #aaa;
+}
+
+/* NAVIGATION QUERY */
+@media screen and (max-width: 1240px){
+	.container {	
+		max-width: calc(100vw * 1900/1900);
+		max-height: calc(100vw * 1900/1900);
+	}
+
+	.header nav{	
+		max-width: 100%;
+		padding: 0 27px;
+	}
+	  
+	nav .content .links{
+		margin-left: 25px;
+	}
+
+	.content .links li a{
+		padding: 8px 13px;
+		font-size: 18px;
+	}
+
+	.content .links ul {
+		width: 195%;
+	}
+
+	.content .links .log-out a {
+		background-color: #323c4e;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.header .menu-icon{
+		display: block;
+	}
+
+	.header #show-menu:checked ~ .menu-icon i::before{
+		content: "\X";
+	}
+
+	nav .content .links{
+		display: block;
+		position: fixed;
+		background: #14181f;
+		height: 100%;
+		width: 100%;
+		top: 70px;
+		left: -100%;
+		margin-left: 0;
+		max-width: 350px;
+		overflow-y: auto;
+		padding-bottom: 100px;
+		transition: all 0.3s ease;
+	}
+
+	nav #show-menu:checked ~ .content .links{
+		left: 0%;
+	}
+	  
+	.content .links li{
+		margin: 15px 20px;
+	}
+	  
+	.content .links li a, .content .links li label{
+		line-height: 40px;
+		font-size: 20px;
+		display: block;
+		padding: 8px 18px;
+		cursor: pointer;
+	}
+
+	.content .links li a.desktop-link{
+		display: none;
+	}
+	  
+	.content .links ul, .content .links ul ul{
+		position: static;
+		opacity: 1;
+		visibility: visible;
+		background: none;
+		max-height: 0px;
+		overflow: hidden;
+	}
+
+	.content .links #show-recipe:checked ~ ul {
+		max-height: 100vh;
+	}
+
+	.content .links ul li{
+		margin: 7px 20px;
+	}
+  
+	.content .links ul li a{
+		font-size: 18px;
+		line-height: 30px;
+		border-radius: 5px!important;
+  	}
+}
+
+/* Media Query */
+@media screen and (max-width: 1240px){
+	h1 {
+    	font-size: 80px;
+    }
+
+	.right-side, .left-picture {
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.ingre {
+		width: 50%;
+	}
+
+	.headline {
+		font-size: 55px;
+	}
+
+	.ingre-info {
+		font-size: 18px;
+	}
+	
+	.ingre-info .ingredients-item {
+		margin-bottom: 25px;
+	}
+
+	.steps {
+		width: 50%;
+	}
+
+	.mini {
+		padding-bottom: 2%;
+	}
+
+	.instruction {
+		font-size: 55px;
+		margin-bottom: 5px;
+	}
+
+	.procedure-item {
+		font-size: 18px;
+	}
+
+	.img {
+		margin-top: 5px;
+		margin-bottom: 40px;
+		height: 369px;
+    	width: 393px;
+	}
+
+	#info {
+		font-size: 18px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.p2, .p3 {
+		font-size: 40px;
+	}
+
+	.ListItem, .ListItem123 {
+		font-size: 17px;
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 1040px) {
+	nav .content .links {
+		margin-left: -35px;
+	}
+
+	.content .links ul {
+		width: 195%;
+	}
+
+	.content .links li a  {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 968px){
+	h1 {
+    	font-size: 70px;
+    }
+
+	.right-side, .left-picture {
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.ingre {
+		width: 50%;
+	}
+
+	.headline {
+		font-size: 50px;
+	}
+
+	.ingre-info {
+		font-size: 17px;
+	}
+	
+	.ingre-info .ingredients-item {
+		margin-bottom: 25px;
+	}
+
+	.steps {
+		width: 50%;
+	}
+
+	.mini {
+		padding-bottom: 2%;
+	}
+
+	.instruction {
+		font-size: 50px;
+		margin-bottom: 5px;
+	}
+
+	.procedure-item {
+		font-size: 16px;
+	}
+
+	.img {
+		margin-top: 5px;
+		margin-bottom: 40px;
+		height: 369px;
+    	width: 393px;
+	}
+
+	#info {
+		font-size: 16px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.p2, .p3 {
+		font-size: 40px;
+	}
+
+	.ListItem, .ListItem123 {
+		font-size: 17px;
+		padding-left: 0;
+	}
+
+	nav .content .links {
+		margin-left: -67px;
+	}
+
+	.content .links ul {
+		width: 195%;
+	}
+
+	.content .links li a, .content .links li label {
+		font-size: 19px;
+	}
+}
+
+@media screen and (max-width: 868px) {
+	h1 {
+    	font-size: 70px;
+    }
+
+	.right-side, .left-picture {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.ingre {
+		width: 100%;
+	}
+
+	.headline {
+		font-size: 56px;
+	}
+
+	.ingre-info {
+		font-size: 19px;
+	}
+	
+	.ingre-info .ingredients-item {
+		margin-bottom: 25px;
+	}
+
+	.steps {
+		width: 100%;
+	}
+
+	.mini {
+		padding-bottom: 2%;
+	}
+
+	.instruction {
+		font-size: 56px;
+		margin-bottom: 5px;
+	}
+
+	.procedure-item {
+		font-size: 18px;
+	}
+
+	.img {
+		margin-top: 5px;
+		margin-bottom: 40px;
+		height: 400px;
+		width: 473px;
+	}
+
+	#info {
+		font-size: 18px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.p2, .p3 {
+		font-size: 40px;
+	}
+
+	.ListItem, .ListItem123 {
+		font-size: 17px;
+		padding-left: 0;
+	}
+
+	.content .logo a {
+		font-size: calc(100vw * 70/1900);
+	}
+
+	.content .links li a, .content .links li label  {
+		font-size: 19px;
+	}
+
+	nav .content .links {
+		margin-left: -5px;
+	}
+
+	.content .links ul {
+		width: 195%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+    	font-size: 70px;
+    }
+
+	.right-side {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.ingre {
+		width: 100%;
+	}
+
+	.headline {
+		font-size: 53px;
+	}
+
+	.ingre-info {
+		font-size: 18px;
+	}
+	
+	.ingre-info .ingredients-item {
+		margin-bottom: 25px;
+	}
+
+	.steps {
+		width: 100%;
+	}
+
+	.mini {
+		padding-bottom: 2%;
+	}
+
+	.instruction {
+		font-size: 53px;
+		margin-bottom: 5px;
+	}
+
+	.procedure-item {
+		font-size: 17px;
+	}
+
+	.img {
+		margin-top: 5px;
+		margin-bottom: 40px;
+		height: 390px;
+    	width: 445px;
+	}
+
+	#info {
+		font-size: 17px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.p2, .p3 {
+		font-size: 36px;
+	}
+
+	.ListItem, .ListItem123 {
+		font-size: 17px;
+		padding-left: 0;
+	}
+
+	.content .logo a {
+		font-size: calc(100vw * 70/1900);
+	}
+
+	.content .links li a, .content .links li label  {
+		font-size: 19px;
+	}
+
+	nav .content .links {
+		margin-left: -5px;
+	}
+
+	.content .links ul {
+		width: 195%;
+	}
+
+	.footer .social-media a {
+		font-size: 20px;
+		width: 38px;
+		height: 38px;
+		line-height: 38px;
+		margin: 0px 8px;
+	}
+	
+	.footer ul li {
+		display: inline;
+		padding: 0px 7px;
+	}
+
+	.footer ul {
+		font-size: 17px;
+	}
+
+	.footer .Copyright {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 668px) {
+	h1 {
+    	font-size: 65px;
+    }
+
+	.right-side {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.ingre {
+		width: 100%;
+	}
+
+	.headline {
+		font-size: 53px;
+	}
+
+	.ingre-info {
+		font-size: 17px;
+	}
+	
+	.ingre-info .ingredients-item {
+		margin-bottom: 25px;
+	}
+
+	.steps {
+		width: 100%;
+	}
+
+	.mini {
+		padding-bottom: 2%;
+	}
+
+	#info {
+		font-size: 16px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.instruction {
+		font-size: 53px;
+		margin-bottom: 5px;
+	}
+
+	.procedure-item {
+		font-size: 17px;
+	}
+
+	.mini {
+		padding-bottom: 2%;
+	}
+
+	.img {
+		margin-top: 5px;
+		margin-bottom: 40px;
+		height: 368px;
+		width: 420px;
+	}
+
+	#info {
+		font-size: 17px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.p2, .p3 {
+		font-size: 36px;
+	}
+
+	.ListItem, .ListItem123 {
+		font-size: 17px;
+		padding-left: 0;
+	}
+
+	.content .logo a {
+		font-size: calc(100vw * 75/1900);
+	}
+
+	.content .links li a, .content .links li label  {
+		font-size: 19px;
+	}
+
+	nav .content .links {
+		margin-left: -5px;
+	}
+
+	.content .links ul {
+		width: 195%;
+	}
+
+	.footer .social-media a {
+		font-size: 20px;
+		width: 38px;
+		height: 38px;
+		line-height: 38px;
+		margin: 0px 8px;
+	}
+	
+	.footer ul li {
+		display: inline;
+		padding: 0px 7px;
+	}
+
+	.footer ul {
+		font-size: 17px;
+	}
+
+	.footer .Copyright {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	h1 {
+    	font-size: 60px;
+    }
+
+	.right-side {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.ingre {
+		width: 100%;
+	}
+
+	.headline {
+		font-size: 53px;
+	}
+
+	.ingre-info {
+		font-size: 17px;
+	}
+	
+	.ingre-info .ingredients-item {
+		margin-bottom: 25px;
+	}
+
+	.steps {
+		width: 100%;
+	}
+
+	.mini {
+		padding-bottom: 2%;
+	}
+
+	#info {
+		font-size: 15px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.instruction {
+		font-size: 53px;
+		margin-bottom: 5px;
+	}
+
+	.procedure-item {
+		font-size: 17px;
+	}
+
+	.mini {
+		padding-bottom: 2%;
+	}
+
+	#info {
+		font-size: 16px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.img {
+		margin-top: 5px;
+		margin-bottom: 40px;
+		height: 345px;
+    	width: 385px;
+	}
+
+	.p2, .p3 {
+		font-size: 36px;
+	}
+
+	.ListItem, .ListItem123 {
+		font-size: 17px;
+		padding-left: 0;
+	}
+
+	.content .logo a {
+		font-size: calc(100vw * 80/1900);
+	}
+
+	.content .links li a, .content .links li label  {
+		font-size: 19px;
+	}
+
+	nav .content .links {
+		margin-left: -5px;
+	}
+
+	.footer .social-media a {
+		font-size: 19px;
+		width: 37px;
+		height: 37px;
+		line-height: 38px;
+		margin: 0px 8px;
+	}
+	
+	.footer ul li {
+		display: inline;
+		padding: 0px 7px;
+	}
+
+	.footer ul {
+		font-size: 15px;
+	}
+
+	.footer .Copyright {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 468px) {
+	h1 {
+    	font-size: 55px;
+    }
+
+	.right-side {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.ingre {
+		width: 100%;
+	}
+
+	.headline {
+		font-size: 50px;
+	}
+
+	.ingre-info {
+		font-size: 16px;
+	}
+	
+	.ingre-info .ingredients-item {
+		margin-bottom: 25px;
+	}
+
+	.steps {
+		width: 100%;
+	}
+
+	.mini {
+		padding-bottom: 2%;
+	}
+
+	#info {
+		font-size: 15px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.img {
+		margin-top: 5px;
+		margin-bottom: 40px;
+		height: 298px;
+    	width: 298px;
+	}
+
+	.instruction {
+		font-size: 50px;
+		margin-bottom: 5px;
+	}
+
+	.procedure-item {
+		font-size: 16px;
+	}
+
+	.p2, .p3 {
+		font-size: 30px;
+	}
+
+	.ListItem, .ListItem123 {
+		font-size: 15px;
+		padding-left: 0;
+	}
+
+	.content .logo a {
+		font-size: calc(100vw * 100/1900);
+	}
+
+	.content .links li a, .content .links li label  {
+		font-size: 19px;
+	}
+
+	nav .content .links {
+		margin-left: -5px;
+	}
+
+	.footer .social-media a {
+		font-size: 19px;
+		width: 37px;
+		height: 37px;
+		line-height: 38px;
+		margin: 0px 8px;
+	}
+	
+	.footer ul li {
+		display: inline;
+		padding: 0px 7px;
+	}
+
+	.footer ul {
+		font-size: 15px;
+	}
+
+	.footer .Copyright {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 368px) {
+	h1 {
+    	font-size: 45px;
+    }
+
+	.right-side {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.ingre {
+		width: 100%;
+	}
+
+	.headline {
+		font-size: 40px;
+	}
+
+	.ingre-info {
+		font-size: 14px;
+	}
+	
+	.ingre-info .ingredients-item {
+		margin-bottom: 25px;
+	}
+
+	.steps {
+		width: 100%;
+	}
+
+	.mini {
+		padding-bottom: 2%;
+	}
+
+	#info {
+		font-size: 13px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.img {
+		margin-top: 5px;
+		margin-bottom: 40px;
+		height: 250px;
+		width: 240px;
+	}
+
+	.instruction {
+		font-size: 40px;
+		margin-bottom: 5px;
+	}
+
+	.procedure-item {
+		font-size: 14px;
+	}
+
+	.p2, .p3 {
+		font-size: 28px;
+	}
+
+	.ListItem, .ListItem123 {
+		font-size: 13px;
+		padding-left: 0;
+	}
+
+	.content .logo a {
+		font-size: calc(100vw * 115/1900);
+	}
+
+	.content .links li a, .content .links li label  {
+		font-size: 19px;
+	}
+
+	nav .content .links {
+		margin-left: -5px;
+	}
+
+	.footer .social-media a {
+		font-size: 19px;
+		width: 37px;
+		height: 37px;
+		line-height: 38px;
+		margin: 0px 6px;
+	}
+	
+	.footer ul li {
+		display: inline;
+		padding: 0px 7px;
+	}
+}
+
+@media screen and (max-width: 268px) {
+	.content .logo a {
+		font-size: calc(100vw * 145/1900);
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	.img {
+		height: 215px;
+		width: 205px;
+	}
+
+	.footer .social-media a {
+		font-size: 19px;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		margin: 0px 6px;
+	}
+	
+	.footer ul li {
+		display: inline;
+		padding: 0px 7px;
+	}
+
+	.footer ul {
+		font-size: 11px;
+	}
+}

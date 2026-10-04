@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Tasty Food</title>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+	<script src="https://kit.fontawesome.com/bc52fcc731.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<div class = "container">
+		<div class="header">
+			<nav>
+				<input type = "checkbox" id = "show-menu">
+					<label for = "show-menu" class = "menu-icon"><i class = "fas fa-bars"></i></label>
+				<div class = "content">
+				<div class = "logo"><a href = "homepage.php">Tasty Food</a></div>
+				
+					<ul class="links">
+
+						<li><a href = "homepage.php">Home</a></li>
+						
+						<li><a href = "aboutus.php">About Us</a></li>
+						
+						<li>
+							<a href = "#" class="desktop-link">Recipe</a>
+							<input type = "checkbox" id = "show-recipe">
+							<label for = "show-recipe">Recipe</label>
+							
+							<ul>
+								<li><a href = "burger.php">Burger</a></li>
+								<li><a href = "pizza.php">Pepperoni Pizza</a></li>
+								<li><a href = "chicken-wings.php">Buffalo Wings</a></li>
+								<li><a href = "cheesy-rings.php">Cheesy Rings</a></li>
+								<li><a href = "lumpia.php">Lumpia</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href = "contact.php" >Contact Us</a>     
+						</li>
+
+						<li class="log-out">
+							<a href = "index.php" >Log Out</a>        
+						</li>
+					</ul>
+				</div>			
+			</nav>
+		</div>
+	</div>	
+
+	<div class="main-container">
+		<h1 data-aos="fade-down">Tasty Food</h1>
+		<p data-aos="fade-right">Unleash Your Inner Chef with Tasty Food Recipes</p>
+		<a href="aboutus.php" data-aos="fade-left">Learn More</a>
+	</div>
+
+	<?php
+		include 'php/homepage.php';
+	?>
+
+	<section class="footer">
+		<div class="social-media">
+			<a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+			<a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://www.google.com/gmail/about/"><i class="fa-brands fa-google"></i></a>
+		</div>
+
+		<ul class="list">
+			<li>
+				<a href="homepage.php">Home</a>
+			</li>
+			<li>
+				<a href="aboutus.php">About</a>
+			</li>	
+			<li>
+				<a href="#">Recipe</a>
+			</li>
+			<li>
+				<a href="contact.php">Contact</a>
+			</li>	
+		</ul>
+
+		<div class="Copyright">
+			&copy; 2023 Tasty Food. All rights reserved.
+		</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="javascript/java.js"></script>
+
+</body>
+</html>
